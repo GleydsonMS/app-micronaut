@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: app
+
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5433/app
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: docker
+    dialect: POSTGRES
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
